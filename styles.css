@@ -52,3 +52,23 @@ header .right-menu .signin {
     font-weight: bold;
     color: white;
 }
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+#featured {
+
+}
+#featured .videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 640px 1fr 1fr;
+    grid-gap: 10px;
+}
+#featured .videos .video {
+    background: white;
+}
+#featured .videos .video.center {
+    width: 640px;
+    height: 360px;
+    background: rgb(218, 11, 11);
+}
