@@ -57,18 +57,40 @@ header .right-menu .signin {
     margin: 0 auto;
 }
 #featured {
-
+    padding: 50px 0;
+}
+#featured .title {
+    font-size: 1.75rem;
+    color: white;
+    margin-bottom: 30px;
 }
 #featured .videos {
     display: grid;
-    grid-template-columns: 1fr 1fr 640px 1fr 1fr;
+    grid-template-columns: 1fr 2fr 620px 2fr 1fr;
     grid-gap: 10px;
 }
 #featured .videos .video {
-    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#featured .videos .video .image {
+    width: 100%;
+    height: 300px;
+    background: url("https://cdn.mos.cms.futurecdn.net/nMeD4zQjJPX4YkqKs3fW25-970-80.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #featured .videos .video.center {
-    width: 640px;
-    height: 360px;
-    background: rgb(218, 11, 11);
+    width: 100%;
+    height: 349px;
+    background: red;
+}
+#featured .videos .video.center .image {
+    width: 100%;
+    height: 349px;
+    transform: scale(1.05);
+    border: 2px solid blue;
+    background: url("http://3rd-strike.com/wp-content/uploads/2018/11/diablo-3-gameplay-eternal-collection-1.jpg");
 }
